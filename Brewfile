@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-tap "declantsien/tap-rust"
+tap "d/tap-rust", "https://git@git.sr.ht/~declantsien/guix-channel/"
 brew 'autoconf'
 brew 'coreutils'
 brew 'curl'
