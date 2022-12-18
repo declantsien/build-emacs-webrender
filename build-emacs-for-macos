@@ -388,9 +388,9 @@ class Build
         '/Library/Application Support/Emacs/site-lisp:' \
         '/usr/local/share/emacs/site-lisp'
       ]
-      if options[:xwidgets] && supports_xwidgets?
-        configure_flags << '--with-xwidgets'
-      end
+      # if options[:xwidgets] && supports_xwidgets?
+      #   configure_flags << '--with-xwidgets'
+      # end
       if options[:tree_sitter] && supports_tree_sitter?
         configure_flags << '--with-tree-sitter'
       end
