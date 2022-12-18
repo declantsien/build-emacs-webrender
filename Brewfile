@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+tap "declantsien/tap-rust"
 brew 'autoconf'
 brew 'coreutils'
 brew 'curl'
@@ -27,3 +28,4 @@ brew 'sqlite'
 brew 'texinfo'
 brew 'tree-sitter'
 brew 'zlib'
+brew 'rust-nightly-2022-10-24'
