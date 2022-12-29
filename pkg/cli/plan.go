@@ -32,7 +32,7 @@ func planCmd() *cli2.Command {
 					"tarball from",
 				Aliases: []string{"e"},
 				EnvVars: []string{"EMACS_REPO"},
-				Value:   "declantsien/emacs-wr",
+				Value:   "declantsien/emacs-ng",
 			},
 			&cli2.StringFlag{
 				Name:  "sha",

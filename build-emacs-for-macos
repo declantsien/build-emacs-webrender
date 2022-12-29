@@ -86,8 +86,8 @@ class Build
   include Output
   include System
 
-  EMACS_MIRROR_REPO = 'declantsien/emacs-wr'
-  DOWNLOAD_URL = 'https://github.com/declantsien/emacs-wr/tarball/%s'
+  EMACS_MIRROR_REPO = 'declantsien/emacs-ng'
+  DOWNLOAD_URL = 'https://github.com/declantsien/emacs-ng/tarball/%s'
 
   attr_reader :root_dir
   attr_reader :source_dir
@@ -190,7 +190,7 @@ class Build
     FileUtils.mkdir_p(tarballs_dir)
 
     url = (DOWNLOAD_URL % sha)
-    filename = "declantsien-emacs-wr-#{sha[0..6]}.tgz"
+    filename = "declantsien-emacs-ng-#{sha[0..6]}.tgz"
     target = File.join(tarballs_dir, filename)
 
     if File.exist?(target)
@@ -381,7 +381,7 @@ class Build
       ].compact.join(':')
 
       configure_flags = [
-        '--with-wr',
+        '--with-webrender',
         '--with-modules',
         '--enable-locallisppath=' \
         '/Library/Application Support/Emacs/${version}/site-lisp:' \
