@@ -49,10 +49,10 @@ bootstrap: bootstrap-brew
 bootstrap-ci: bootstrap-brew bootstrap-brew-ci bootstrap-pip
 
 bootstrap-brew:
-	brew bundle
+	brew bundle --no-upgrade
 
 bootstrap-brew-ci:
-	brew bundle --file Brewfile.ci
+	brew bundle --no-upgrade --file Brewfile.ci
 
 bootstrap-pip:
 	$(PIP) install -r requirements-ci.txt
