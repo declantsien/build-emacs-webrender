@@ -49,10 +49,11 @@ bootstrap: bootstrap-brew
 bootstrap-ci: bootstrap-brew bootstrap-brew-ci bootstrap-pip
 
 bootstrap-brew:
-	brew install python@3.11 --overwrite
+	HOMEBREW_NO_AUTO_UPDATE=1 HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1 \
 	brew bundle
 
 bootstrap-brew-ci:
+	HOMEBREW_NO_AUTO_UPDATE=1 HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1 \
 	brew bundle --file Brewfile.ci
 
 bootstrap-pip:
