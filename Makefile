@@ -49,11 +49,10 @@ bootstrap: bootstrap-brew
 bootstrap-ci: bootstrap-brew bootstrap-brew-ci bootstrap-pip
 
 bootstrap-brew:
-	brew upgrade
+	brew install python@3.11 --overwrite
 	brew bundle
 
 bootstrap-brew-ci:
-	brew upgrade
 	brew bundle --file Brewfile.ci
 
 bootstrap-pip:
