@@ -1,9 +1,9 @@
-#+title: build-emacs-wr-for-macos
+#+title: build-emacs-webrender
 
 Fork of [build-emacs-for-macos](https://github.com/jimeh/build-emacs-for-macos)
-for build [Emacs Webrender](https://github.com/declantsien/emacs-wr) fork on macOS.
+for build [Emacs Webrender](https://github.com/declantsien/emacs-ng) fork on macOS.
 
 * Binary Builds
 
-Nightly and stable binary builds produced with this build script are available
-from [declantsien/emacs-wr-builds](https://github.com/declantsien/emacs-wr-builds).
+Nightly binary builds produced with this build script are available
+from [declantsien/emacs-webrender](https://github.com/declantsien/emacs-webrender).
